@@ -14,7 +14,7 @@ public class AntiRickroll {
 
     public static void main(String[] args) throws LoginException {
 
-        JDA jda = JDABuilder.create("MTAzMzM3NjUwMTIyMTAzMjAxNg.G7YRVN.LxZzH3yFiD-vy0zQhYZdmW39j6vo6AeWD5hUKk", Arrays.asList(INTENTS))
+        JDA jda = JDABuilder.create("TOKEN", Arrays.asList(INTENTS))
                 .setActivity(Activity.watching("villagers"))
                 .addEventListeners(new RickrollDetector())
                 .build();
